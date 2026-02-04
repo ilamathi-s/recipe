@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom classes for app-wide consistency */
+.btn {
+  @apply px-6 py-3 rounded-lg text-white hover:shadow-lg transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-orange-500 hover:bg-orange-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-600;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.card {
+  @apply p-4 border rounded-lg bg-white hover:shadow-lg transition-shadow duration-200 cursor-pointer;
+}
+
+.form-input {
+  @apply p-3 border rounded w-full;
+}
+
+.form-select {
+  @apply p-3 border rounded w-full;
+}
+
+.label-checkbox {
+  @apply flex items-center gap-2;
+}
+
+.heading {
+  @apply text-3xl font-bold mb-6;
+}
+
+.sub-heading {
+  @apply text-xl font-semibold mb-2;
+}
+
+.grid-recipes {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.min-screen {
+  @apply min-h-screen;
+}
+
+.bg-main {
+  @apply bg-orange-50;
+}
+
+.text-error {
+  @apply text-red-500 mb-4;
+}
+/* ---------- Header ---------- */
+.navbar {
+  @apply bg-white shadow-md px-6 py-4 flex justify-between items-center;
+}
+
+.nav-title {
+  @apply text-2xl font-bold text-orange-600;
+}
+
+.nav-links {
+  @apply flex gap-4;
+}
+
+.nav-link {
+  @apply text-gray-700 hover:text-orange-500 font-medium cursor-pointer;
+}
+
+/* ---------- Loader ---------- */
+.loader-container {
+  @apply min-h-screen flex items-center justify-center;
+}
+
+.loader {
+  @apply w-12 h-12 border-4 border-orange-300 border-t-orange-600 rounded-full animate-spin;
+}
+
+/* ---------- Recipe Detail Page ---------- */
+.recipe-detail {
+  @apply max-w-4xl mx-auto p-6 bg-white rounded-lg shadow;
+}
+
+.recipe-title {
+  @apply text-3xl font-bold mb-4;
+}
+
+.recipe-meta {
+  @apply text-gray-600 mb-4;
+}
+
+.recipe-section {
+  @apply mb-6;
+}
+
+.recipe-section-title {
+  @apply text-xl font-semibold mb-2;
+}
+
+.recipe-text {
+  @apply text-gray-700 leading-relaxed;
+}
+
+/* ---------- Preference Page Enhancements ---------- */
+.preference-card {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+/* ---------- Empty State ---------- */
+.empty-state {
+  @apply text-center text-gray-500 mt-10;
+}
